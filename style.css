@@ -2,4 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+}
+
+:root {
+    --color-brown: #492612;
+    --color-white: #d6d6d6;
+    --color-yellow: #f2cb3d;
+    --font-title: "Mr Dafoe", cursive;
+    --font-subtitle: "Funnel Display", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-brown);
+    padding: 1.5rem;
+    text-align: center;
+    z-index: 10;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+li > a {
+    margin: auto 1rem;
+    letter-spacing: .25rem;
+    color: var(--color-white);
+}
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 95vh; 
+    background: linear-gradient(rgba(0, 0, 0, 0.05), var(--color-brown));
+}
+
+#hero-section > img {
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    width: 100%;   
+    height: 95vh; 
+    z-index: -10;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+}
+
+.content-hero {
+    justify-content: center;
+    text-align: center;
+    padding: 40vh;
+    color: var(--color-white);
+}
+
+.content-hero > p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: var(--color-yellow);
+    color: var(--color-brown);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#cardapio {
+    justify-content: center;
+    text-align: center;
+    padding: 10rem 0;
 }
