@@ -3,6 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Assistant", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-yellow) var(--color-brown);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-brown);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-yellow);
 }
 
 :root {
@@ -14,6 +28,10 @@
     --size-h2: 3rem;
     --size-h3: 2rem;
     --size-p: 1.25rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -32,14 +50,18 @@ nav {
 
 ul {
     display: inline-flex;
-    list-style-type: none;
+    list-style: none;
 }
 
-li > a {
+li a {
     margin: auto 1rem;
-    font-size: 1.25rem;
+    font-size: var(--size-p);
     letter-spacing: .25rem;
     color: var(--color-white);
+}
+
+li a:hover {
+    color: var(--color-yellow);
 }
 
 #hero-section {
@@ -52,7 +74,7 @@ li > a {
     align-items: center;
 }
 
-#hero-section > img {
+#hero-section img {
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -64,16 +86,17 @@ li > a {
 .content-hero {
     text-align: center;
     color: var(--color-white);
+    padding: 2rem;
 }
 
 h1 {
     font-family: var(--font-title);
     font-size: 5rem;
-    font-weight: 300;
-    letter-spacing: 0.25rem;
+    font-weight: 100;
+    letter-spacing: 0.15rem;
 }
 
-.content-hero > p {
+.content-hero p {
     font-size: 1.75rem;
     margin-bottom: 2rem;
     letter-spacing: 0.25rem;
@@ -83,13 +106,17 @@ h1 {
     display: block;
     background-color: var(--color-yellow);
     color: var(--color-brown);
-    padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
     margin: 2rem auto;
     width: fit-content;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.button:hover {
+    box-shadow: 0 0 0.1rem 0.1rem var(--color-yellow);
 }
 
 h2 {
@@ -104,6 +131,7 @@ h2 {
     justify-content: center;
     padding: 10rem 0;
     background-color: var(--color-white);
+    color: var(--color-brown);
 }
 
 .cards-cardapio {
@@ -119,8 +147,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 25rem;
-    background-color: #f2cb3d;
+    background-color: var(--color-yellow);
+    color: var(--color-brown);
     border-radius: 3rem;
+    box-shadow: 0 0.1rem 0.5rem var(--color-brown);
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .card-pizza img {
@@ -139,7 +171,20 @@ h3 {
 }
 
 .content-card-pizza {
-    padding: 1rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem 2rem 2rem;
+}
+
+.price {
+    text-align: right;
+    padding: 1rem 0 0;
+    margin: auto 0;
+}
+
+.card-pizza:hover {
+    box-shadow: 0 0 0.5rem 0.15rem var(--color-brown);
 }
 
 #sobre-nos {
@@ -163,17 +208,18 @@ h3 {
 .content-sobre {
     text-align: center;
     color: var(--color-white);
+    padding: 2rem;
 }
 
 p {
     font-size: var(--size-p);
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
 }
 
 #contato {
-    display: inline-block;
     padding: 6rem 2rem;
     background-color: var(--color-white);
+    color: var(--color-brown);
     width: 100%;
     text-align: center;
 }
@@ -181,10 +227,12 @@ p {
 .content-contato {
     display: inline-flex;
     padding-top: 2rem;
+    text-align: left;
+    font-style: italic;
 }
 
-span {
-    font-weight: bolder;
+.content-contato > * {
+    margin: auto 2rem;
 }
 
 footer {
@@ -193,4 +241,39 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 1.25rem;
+}
+
+.github {
+    color: var(--color-yellow);
+    letter-spacing: 0;
+}
+
+@media (max-width: 800px) {
+    .content-contato {
+        display: inline-block;
+    }
+
+    .content-contato > * {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        --size-h2: 2rem;
+        --size-h3: 1.5rem;
+        --size-p: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .content-hero p {
+        font-size: 1.25rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
 }

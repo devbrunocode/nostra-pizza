@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +22,15 @@
             </ul>
         </nav>
     </header> 
-    <div id="hero-section">
+    <section id="hero-section">
         <img src="assets/03.jpg" alt="#">
         <div class="content-hero">
             <h1>Bem-vindo à Nostra Pizza!</h1>
             <p>O sabor autêntico italiano, com um toque brasileiro.</p>
             <a href=#cardapio class="button">Ver Cardápio</a>
         </div>        
-    </div>  
-    <main id="cardapio">
+    </section>  
+    <section id="cardapio">
         <h2>Cardápio</h2>
         <div class="cards-cardapio">
             <div class="card-pizza">
@@ -38,6 +38,7 @@
                 <div class="content-card-pizza">
                     <h3>Margerita</h3>
                     <p>Molho de tomate, mussarela, manjericão fresco.</p>
+                    <p class="price"><strong>R$39</strong></p>
                 </div>            
             </div>
             <div class="card-pizza">
@@ -45,13 +46,15 @@
                 <div class="content-card-pizza">
                     <h3>Calabresa</h3>
                     <p>Molho de tomate, mussarela, tomate fresco, calabresa.</p>
+                    <p class="price"><strong>R$49</strong></p>
                 </div>            
             </div>
             <div class="card-pizza">
                 <img src="assets/pizzas-cardapio/nostra-pizza.webp" alt="pizza especial - nostra pizza">
                 <div class="content-card-pizza">
                     <h3>Nostra Pizza</h3>
-                    <p>Molho de tomate, mussarela, manjericão fresco, tomate fresco, mix de calabresa e peperoni moído.</p>
+                    <p>Molho de tomate, mussarela, tomate fresco, mix de calabresa e pepperoni moído.</p>
+                    <p class="price"><strong>R$69</strong></p>
                 </div>            
             </div>
             <div class="card-pizza">
@@ -59,6 +62,7 @@
                 <div class="content-card-pizza">
                     <h3>Parma</h3>
                     <p>Molho de tomate, mussarela, manjericão fresco, tomate cereja, presunto parma.</p>
+                    <p class="price"><strong>R$59</strong></p>
                 </div>            
             </div>
             <div class="card-pizza">
@@ -66,33 +70,78 @@
                 <div class="content-card-pizza">
                     <h3>Mussarela</h3>
                     <p>Molho de tomate, mussarela, tomate fresco.</p>
+                    <p class="price"><strong>R$49</strong></p>
+                </div>            
+            </div>
+            <div class="card-pizza">
+                <img src="assets/02.jpg" alt="#">
+                <div class="content-card-pizza">
+                    <h3>Margerita</h3>
+                    <p>Molho de tomate, mussarela, manjericão fresco.</p>
+                    <p class="price"><strong>R$39</strong></p>
+                </div>            
+            </div>
+            <div class="card-pizza">
+                <img src="assets/pizzas-cardapio/calabresa.jpg" alt="pizza de calabresa">
+                <div class="content-card-pizza">
+                    <h3>Calabresa</h3>
+                    <p>Molho de tomate, mussarela, tomate fresco, calabresa.</p>
+                    <p class="price"><strong>R$49</strong></p>
+                </div>            
+            </div>
+            <div class="card-pizza">
+                <img src="assets/pizzas-cardapio/nostra-pizza.webp" alt="pizza especial - nostra pizza">
+                <div class="content-card-pizza">
+                    <h3>Nostra Pizza</h3>
+                    <p>Molho de tomate, mussarela, manjericão fresco, tomate fresco, mix de calabresa e peperoni moído.</p>
+                    <p class="price"><strong>R$69</strong></p>
+                </div>            
+            </div>
+            <div class="card-pizza">
+                <img src="assets/pizzas-cardapio/parma.jpg" alt="#">
+                <div class="content-card-pizza">
+                    <h3>Parma</h3>
+                    <p>Molho de tomate, mussarela, manjericão fresco, tomate cereja, presunto parma.</p>
+                    <p class="price"><strong>R$59</strong></p>
+                </div>            
+            </div>
+            <div class="card-pizza">
+                <img src="assets/pizzas-cardapio/mussarela.webp" alt="#">
+                <div class="content-card-pizza">
+                    <h3>Mussarela</h3>
+                    <p>Molho de tomate, mussarela, tomate fresco.</p>
+                    <p class="price"><strong>R$49</strong></p>
                 </div>            
             </div>
         </div>        
-    </main>    
-    <div id="sobre-nos">
+    </section>    
+    <section id="sobre-nos">
         <img src="assets/01.jpg" alt="">
         <div class="content-sobre">
             <h2>Sobre Nós</h2>
             <p>Nossa pizzaria une a clássica culinária italiana com a qualidade e criatividade brasileira.</p>
             <p>Utilizamos os melhores ingredientes para tornar sua experiência inesquecível.</p>
         </div>
-    </div>
-    <div id="contato">
+    </section>
+    <section id="contato">
         <h2>Contato</h2>
         <p>Entre em contato conosco para fazer pedidos ou tirar dúvidas</p>
-        <div class="content-contato">
-            <p><span>Endereço: </span>Av. Nações Unidas, nº1538</p>
-            <p>Centro - Cidade/UF</p>
-            <p><span>Telefone: </span>(12) 3456-7890</p>
-            <p><span>E-mail: </span>contato@nostrapizza.com</p>
-            <p><span>Horário de Funcionamento: </span></p>
-            <p>Segunda a Sábado: 11h às 23h - Domingo: 16h às 23h</p>
-        </div>
+        <address class="content-contato">
+            <p><strong>Endereço: </strong>Av. Nações Unidas, nº1538 <br>
+            Centro - Cidade/UF CEP 12345-678</p>
+            <div>
+                <p><strong>Telefone: </strong>(12) 3456-7890</p>
+                <p><strong>E-mail: </strong>contato@nostrapizza.com</p>
+            </div>
+            <div>
+                <p><strong>Horário de Funcionamento: </strong></p>
+                <p>Segunda a Sábado: 11h às 23h - Domingo: 16h às 23h</p>
+            </div>
+        </address>
         <a href="#" class="button">Pedir agora mesmo!</a>
-    </div>
+    </section>
     <footer>
-        <p>&copy; 2024 - Nostra Pizza</p>
+        <p>&copy; 2024 - Nostra Pizza | feito por: <a href="https://github.com/devbrunocode" class="github">@brunocode</a></p>
     </footer>
 </body>
 </html>
